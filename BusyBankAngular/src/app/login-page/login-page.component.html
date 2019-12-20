@@ -1,0 +1,27 @@
+<nav class="navbar navbar-light" style="background-color: #5e216d;">
+    <a class="navbar-brand pl-4" style="color:rgb(255, 255, 255); font-size: 25px" href="#">BusyBank</a>
+</nav>
+<div style="background-color: #0c000b; height: 3px;"></div>
+<!-- <nav class="navbar navbar-light" style="background-color: #470044;"></nav> -->
+<div class="pl-5 pt-5">
+    <form #login="ngForm" (ngSubmit)="onAccept(login.value)">
+        <div class="form-group row">
+            <label for="exampleInputEmail1" class="col-sm-1 col-form-label">Email address</label>
+            <div class="col-sm-3">
+                <input type="email" name = "email" ngModel placeholder="Email Address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="exampleInputPassword1" class="col-sm-1 col-form-label">Password</label>
+            <div class="col-sm-3">
+                <input type="password" name="password" ngModel placeholder="Password" class="form-control" id="exampleInputPassword1">
+            </div>      
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember Email</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="button" class="btn btn-secondary ml-2">Register</button>
+    </form>
+</div>
